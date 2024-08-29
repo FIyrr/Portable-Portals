@@ -1,0 +1,1 @@
+loot replace entity @s weapon.mainhand loot portport:item/portable_end_portal

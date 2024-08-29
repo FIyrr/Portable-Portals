@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "stepping_on": {
+                "dimension": "minecraft:overworld"
+              }
+            }
+          }
+        ],
+        "item": {
+          "components": {
+            "minecraft:custom_data": "{portport:{end_portal:True}}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "portport:use/end_portal"
+  }
+}
